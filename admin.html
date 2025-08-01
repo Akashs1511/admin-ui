@@ -1,0 +1,97 @@
+<!-- index.html (main dashboard) -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ANDi Banking Admin Dashboard</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    <style>
+      body {
+        display: flex;
+        min-height: 100vh;
+      }
+      .sidebar {
+        width: 250px;
+        background: #343a40;
+        color: white;
+        height: 100vh;
+        position: fixed;
+      }
+      .sidebar a {
+        color: white;
+        display: block;
+        padding: 15px;
+        text-decoration: none;
+      }
+      .sidebar a:hover {
+        background: #495057;
+      }
+      .main-content {
+        margin-left: 250px;
+        padding: 20px;
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <h4 class="text-center mt-4">ANDi Admin</h4>
+      <a href="index.html"><i class="fas fa-tachometer-alt"></i> Dashboard</a>
+      <a href="users.html"><i class="fas fa-users"></i> Users</a>
+      <a href="branches.html"><i class="fas fa-code-branch"></i> Branches</a>
+      <a href="deposits.html"><i class="fas fa-money-check-alt"></i> Deposits</a>
+      <a href="withdrawals.html"><i class="fas fa-hand-holding-usd"></i> Withdrawals</a>
+      <a href="transactions.html"><i class="fas fa-exchange-alt"></i> Transactions</a>
+      <a href="reports.html"><i class="fas fa-chart-line"></i> Reports</a>
+      <a href="notifications.html"><i class="fas fa-bell"></i> Notifications</a>
+      <a href="settings.html"><i class="fas fa-cogs"></i> Settings</a>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-content">
+      <h2>Welcome to the Admin Dashboard</h2>
+      <p>Monitor and manage all banking operations here.</p>
+
+      <div class="row mt-4">
+        <div class="col-md-3">
+          <div class="card text-white bg-info mb-3">
+            <div class="card-body">
+              <h5 class="card-title">Total Users</h5>
+              <p class="card-text">1,234</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card text-white bg-success mb-3">
+            <div class="card-body">
+              <h5 class="card-title">Active Branches</h5>
+              <p class="card-text">12</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card text-white bg-warning mb-3">
+            <div class="card-body">
+              <h5 class="card-title">Total Deposits</h5>
+              <p class="card-text">$8,50,000</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card text-white bg-danger mb-3">
+            <div class="card-body">
+              <h5 class="card-title">Pending Withdrawals</h5>
+              <p class="card-text">$1,20,000</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
